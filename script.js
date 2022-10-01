@@ -3,14 +3,14 @@ const hoursEl = document.getElementById('hours');
 const minsEl = document.getElementById('minutes');
 const secsEl = document.getElementById('seconds');
 
-const newBeginnings = '31 Oct 2021';
+const newBeginnings = '30 Oct 2022';
 
 function countdown() {
     const newDate = new Date(newBeginnings);
     const currentDate = new Date();
 
     const totalSeconds = (newDate - currentDate) / 1000;
-    
+
     const days = Math.floor(totalSeconds / 3600 / 24);
     const hours = Math.floor(totalSeconds / 3600) % 24;
     const minutes = Math.floor(totalSeconds / 60) % 60;
